@@ -1,7 +1,6 @@
 import numpy as np
 from PolicyIteration import PolicyIteration
 
-
 class ADPLearner:
     def __init__(self, num_states, num_actions, gamma=0.9, epsilon=0.9, xi=0.99):
         self.num_states = num_states
@@ -9,6 +8,7 @@ class ADPLearner:
         self.gamma = gamma
         self.epsilon = epsilon
         self.xi = xi
+
 
         self.u_table = np.zeros(num_states)
         self.r_table = np.zeros(num_states)
