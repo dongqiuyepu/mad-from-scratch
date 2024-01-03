@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 class LinearRegression:
-    def __init__(self, x, y, max_iteration=1000, tol=1e-3, verbose=False, plot=False):
+    def __init__(self, x, y, max_iteration=1000, tol=1e-3, verbose=False, plot=False, art=False):
         """
         :param x: x of training data
         :param y: y of training data
