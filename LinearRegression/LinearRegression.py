@@ -23,7 +23,7 @@ class LinearRegression:
         self.y_train = y
         self.weights = None
 
-    def standard_transform(self, x):
+    def standard_transform(self, x, h=0):
         """
         Scale and center data x
         :param x: input data
