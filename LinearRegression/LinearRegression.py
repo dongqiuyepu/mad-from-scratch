@@ -33,7 +33,7 @@ class LinearRegression:
         scaled_x = np.insert(scaled_x, 0, np.ones(scaled_x.shape[0]), axis=1)
         return scaled_x
 
-    def gradient_descend(self, x, y, lr=0.01, h=1.0):
+    def gradient_descend(self, x, y, lr=0.01):
         """
         this function is the gradient descent process of training data x and y.
         the weights(w) is optimized so that wx has the minimal MSE to y.
