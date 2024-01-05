@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 
 class LinearRegression:
-    def __init__(self, x, y, max_iteration=1000, tol=1e-3, verbose=False, plot=False, art=False):
+    def __init__(self, x, y, max_iteration=1000, tol=1e-3, verbose=False, plot=False):
         """
         :param x: x of training data
         :param y: y of training data
@@ -33,7 +33,7 @@ class LinearRegression:
         scaled_x = np.insert(scaled_x, 0, np.ones(scaled_x.shape[0]), axis=1)
         return scaled_x
 
-    def gradient_descend(self, x, y, lr=0.01):
+    def gradient_descend(self, x, y, lr=0.01, h=1):
         """
         this function is the gradient descent process of training data x and y.
         the weights(w) is optimized so that wx has the minimal MSE to y.
